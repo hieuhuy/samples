@@ -1,0 +1,783 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="opacity: 1;" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   <meta content="width=device-width, initial-scale=1" name="viewport" />
+   <title>Pimsleur.com</title>
+   <style type="text/css">/*fonts*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/*common styles*/
+body {
+	padding: 0;
+	margin: 0;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	background-color:#f7f7f7;
+}
+table {
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+td {
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	color: #20252c;
+	font-weight: 400;
+}
+.ReadMsgBody, .ExternalClass {
+	width: 100%;
+}
+.ExternalClass * {
+	line-height: 100%;
+}
+a[href^="tel"], a[href^="sms"] {
+	text-decoration: none;
+	color: inherit;
+	pointer-events: none;
+	cursor: default;
+}
+.graylink a {
+	text-decoration: none;
+	color: #20252c;
+}
+.whitelink a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.text-link {
+	transition: all ease 0.5s;
+}
+.text-link:hover {
+	color: #1644f9 !important;
+}
+.button-link {
+	transition: all ease 0.5s;
+}
+.button-link:hover {
+	background-color: #1644f9 !important;
+}
+
+@media only screen and (max-width: 700px) {
+.wraptab {
+	width: 95% !important;
+}
+.fullwidth {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+img.fullwidth {
+	height: auto !important;
+}
+.width59pct {
+	width: 59% !important;
+	max-width: 59% !important;
+}
+.width50pct {
+	width: 50% !important;
+	max-width: 50% !important;
+}
+.width39pct {
+	width: 39% !important;
+	max-width: 39% !important;
+}
+.width49pct {
+	width: 49% !important;
+	max-width: 49% !important;
+}
+.width45pct {
+	width: 45% !important;
+	max-width: 45% !important;
+}
+.socialtable {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.bottompad5 {
+	padding-bottom: 5px !important;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.wraptab {
+	width: 95% !important;
+	max-width:95% !important;
+}
+.fullwidth, .width59pct, .width50pct, .width49pct, .width45pct, .width39pct {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: table !important;
+}
+.ctatable {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.vlineTab {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin-bottom: 20px !important;
+}
+.vlineTd {
+	border-right: 0 !important;
+	border-bottom: 1px dashed #9abfd2 !important;
+	height: 20px !important;
+}
+img.fullwidth {
+	height: auto !important;
+}
+.timerImg {
+	width: 80% !important;
+	max-width: 324px;
+}
+.squareImage {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+.preheader {
+	padding: 12px 0px 12px 0px !important;
+}
+.headerNav {
+	padding-top:0px !important;
+	height:auto !important;
+}
+.bodypadding {
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.padtop30 {
+	padding-top:30px !important;
+}
+.padtop15 {
+	padding-top:15px !important;
+}
+.notoppadding {
+	padding-top:0 !important;
+}
+.nosidepadding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.nopadding {
+	padding: 0 !important;
+}
+.hlinepadding {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.autoHeight {
+	height: auto !important;
+}
+.centerText {
+	text-align: center !important;
+}
+.hideMobile {
+	display: none !important;
+}
+.headerfont {
+	font-size: 24px !important;
+}
+.subheaderfont {
+	font-size: 18px !important;
+}
+.bodyfont {
+	font-size: 14px !important;
+}
+.refertable {
+	border-bottom: 1px solid #bbbbbb !important;
+}
+.bottompadding12 {
+	padding-bottom: 12px !important;
+}
+.toppadding12 {
+	padding-top: 12px !important;
+}
+}
+   </style>
+   <!--[if (gte mso 9)]>
+
+<style type="text/css">
+
+td {
+
+	font-family:Helvetica, Arial, sans-serif !important;
+
+}
+
+v\: * {
+
+  behavior: url(#default#VML);
+
+  display: inline-block;
+
+}
+
+</style>
+
+<![endif]-->
+</head>
+<body style="margin: 0px; padding: 0px; background-color: rgb(247, 247, 247);"><!--wrapper-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color:#f7f7f7;" width="100%">
+   <tbody>
+      <tr>
+         <td align="center" valign="top"><!--header-->
+         <table align="center" border="0" cellpadding="0" cellspacing="0" class="wraptab" style="max-width:95%;" width="700">
+            <tbody>
+               <tr>
+                  <td class="preheader" style="padding-top:15px; padding-bottom:15px;" valign="top">
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="hideMobile width59pct" style="max-width:59%;" width="480">
+                     <tbody>
+                        <tr>
+                           <td align="left" class="centerText" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-weight:400; font-size:12px;"><a class="text-link" href="#" style="font-weight:600; color:#1c2154; text-decoration:none;" target="_blank">Celebrate the New Pimsleur&mdash;Up to XX% Off Storewide + Free Shipping</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <table align="right" border="0" cellpadding="0" cellspacing="0" class="width39pct" style="max-width:39%;" width="200">
+                     <tbody>
+                        <tr>
+                           <td align="right" class="centerText" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-weight:400; font-size:12px;"><a class="text-link" href="#" style="color:#1c2154; text-decoration:underline;" target="_blank">View in a web browser</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+               <tr>
+                  <td valign="top"><!--header elements--><table class="width39pct" align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:39%;" width="146">
+							<tr>
+								<td align="left" class="centerText" style="padding-bottom:10px;">
+								<a href="#" target="_blank"><img alt="Pimsleur" border="0" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/pimsleur_logo_2x.png" width="146" height="64" /></a>
+								</td>
+							</tr>
+						</table>
+
+						<table class="hideMobile width59pct" align="right" border="0" cellpadding="0" cellspacing="0" style="max-width:59%;" width="450">
+							<tr>
+								<td align="right" class="centerText headerNav" height="74" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-weight:600; font-size:15px;" valign="bottom">
+									<p class="tollFree" style="margin-top:0px; margin-right:0; margin-bottom:10px; margin-left:0; padding:0; color:#20252d;"><a class="text-link" href="#" style="color:#20252c; text-decoration:none;" target="_blank">Languages</a> | <a class="text-link" href="#" style="color:#20252c; text-decoration:none;" target="_blank">Pimsleur&nbsp;Method</a> | <a class="text-link" href="#" style="color:#20252c; text-decoration:none;" target="_blank">Free&nbsp;Lesson</a>
+									</p>
+								</td>
+							</tr>
+						</table><!--//header elements--></td>
+               </tr>
+            </tbody>
+         </table>
+         <!--//header--></td>
+      </tr>
+   </tbody>
+</table>
+<!--//wrapper--><!--wrapper-->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="background-color:#f7f7f7;" width="100%">
+   <tbody>
+      <tr>
+         <td align="center" style="padding-bottom:15px;"><!--main-->
+         <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="wraptab" style="max-width:95%;" width="700"><!--hero-->
+            <tbody>
+               <tr>
+                  <td align="center" bgcolor="#e2dfd7" style="background-color:#e2dfd7;"><a href="#" target="_blank"><img alt="up to 40% Off Storewide" border="0" class="fullwidth" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/oldcontent/pimsleur_2017/20170507_pimsleur_newlookpt4/images/Hero-NewLook-US4.jpg" style="display:block; max-width: 700px; max-height:520px;" width="700" /></a></td>
+               </tr>
+               <!--//hero--><!--timer-->
+               <tr>
+                  <td align="center" bgcolor="#1c2154" style="background-color:#1c2154;">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="fillwidth">
+                     <tbody>
+                        <tr>
+                           <td width="16"></td>
+                           <td align="center" style="padding-top:10px; padding-bottom:10px;"><a href="#" style="color:#fffffe;" target="_blank"><img alt="Ends Soon!" border="0" class="timerImg" src="http://s.mmgo.io/t/n32" style="display:block; max-width: 432px;" width="100%" /></a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+               <!--//timer--><!--body content--><!--two columns-->
+               <tr>
+                  <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" style="max-width:100%;" width="700">
+                     <tbody>
+                        <tr>
+                           <td class="bodypadding" style="padding:30px 30px 15px 30px;" valign="top">
+                           <table align="left" border="0" cellpadding="0" cellspacing="0" class="width45pct" style="max-width: 280px;" width="280">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" class="autoHeight" height="275" valign="middle">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" width="100%">
+                                       <tbody>
+                                          <tr>
+                                             <td align="left" class="headerfont centerText padtop15" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:31px; font-weight:600; color:#1c2154; line-height:36px; padding-top:15px;">Final Hours!</td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left" class="subheaderfont centerText" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:19px; font-weight:600; color:#1c2154; line-height:150%; padding-bottom:20px; padding-top:10px;">Up to 40% OFF Storewide,<br />
+                                             plus Free Shipping.</td>
+                                          </tr>
+                                          <tr>
+                                             <td align="left" class="centerText" style="padding-bottom:15px;">
+                                             <table align="left" border="0" cellpadding="0" cellspacing="0" class="ctatable" style="max-width:100%;" width="200">
+                                                <tbody>
+                                                   <tr>
+                                                      <td align="center">
+                                                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:100%;" width="200">
+                                                         <tbody>
+                                                            <tr>
+                                                               <td bgcolor="#1c2154" class="button-link" height="48" style="background-color:#1c2154; font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:17px; font-weight:600; text-align:center; letter-spacing:1px; border-radius:24px;" valign="middle"><a href="#" style="color:#ffffff; text-decoration: none; display:block;" target="_blank">Save Now</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td style="padding-top:10px; font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size: 12px; font-weight:normal; color:#1c2154; text-align:center; padding-bottom:0px;">USE CODE <span style="font-weight:600;">NEWLOOK</span></td>
+                                                            </tr>
+                                                         </tbody>
+                                                      </table>
+                                                      </td>
+                                                   </tr>
+                                                </tbody>
+                                             </table>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+
+                           <table align="right" border="0" cellpadding="0" cellspacing="0" class="width45pct" style="max-width: 340px;" width="340">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" class="autoHeight" height="275" valign="middle">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" width="100%">
+                                       <tbody>
+                                          <tr>
+                                             <td align="center" class="squareImage"><a href="#" target="_blank"><img alt="Save Now" border="0" class="roundImg" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/squares/square_female_eiffel.jpg" style="max-width:100%; display:inline-block;" width="340" /></a></td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+               <!--//two columns--><!--horizontal line-->
+               <tr>
+                  <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" style="max-width:100%;" width="700">
+                     <tbody>
+                        <tr>
+                           <td align="center" class="hlinepadding" style="padding:0px 30px 0px 30px;" valign="top">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td height="15" style="font-size:5px; border-bottom:1px dashed #9abfd2;"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+               <!--//horizontal line--><!--two columns-->
+               <tr>
+                  <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" style="max-width:100%;" width="700">
+                     <tbody>
+                        <tr>
+                           <td class="bodypadding" style="padding:30px 30px 30px 30px;" valign="top">
+                           <table align="left" border="0" cellpadding="0" cellspacing="0" class="width45pct" style="max-width: 45%;" width="300">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" class="centerText headerfont" style="padding-top:15px; padding-bottom:10px;"><img alt="FlexiPay" border="0" height="41" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/icons/icon_flexipay_2x.png" style="display:inline-block;" width="40" /></td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" class="centerText headerfont" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:25px; color:#1c2154; font-weight:600; padding-top:0px; padding-bottom:10px;">FlexiPay</td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" class="centerText bodyfont" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:14px; font-weight:400; line-height:150%; color:#20252c; padding-top:0px; padding-bottom:15px;">Stretch your payments for 3 months on a course purchase of $150 or more using your credit card. There are no extra charges to use Pimsleur&rsquo;s FlexiPay!<br />
+                                    <a class="text-link" href="#" style="font-weight:600; color:#1c2154; text-decoration:underline;" target="_blank">Learn&nbsp;More</a></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <!--vertical line-->
+
+                           <table align="left" border="0" cellpadding="0" cellspacing="0" class="vlineTab" style="border-collapse:collapse;" width="20">
+                              <tbody>
+                                 <tr>
+                                    <td class="vlineTd" height="240" style="font-size:5px; border-right: 1px dashed #9abfd2;"></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <!--//vertical line-->
+
+                           <table align="right" border="0" cellpadding="0" cellspacing="0" class="width45pct" style="max-width: 45%;" width="300">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" class="centerText headerfont" style="padding-top:15px; padding-bottom:10px;"><img alt="Testimonials" border="0" height="41" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/icons/icon_testimonial_2x.png" style="display:inline-block;" width="54" /></td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" class="centerText headerfont" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:25px; color:#1c2154; font-weight:600; padding-top:0px; padding-bottom:10px;">What Real Users Say</td>
+                                 </tr>
+                                 <tr>
+                                    <td align="center" class="centerText bodyfont" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:14px; font-weight:400; line-height:150%; color:#20252c; padding-top:0px; padding-bottom:15px;"><em>&ldquo;I have been complimented by native German speakers as to my precise articulation and the fact that I speak with &ldquo;no accent&rdquo;. I credit the Pimsleur method for this.&rdquo;</em> &mdash;&nbsp;Roxanne Sanders from Canton, MI</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+               <!--//two columns--><!--//body content--><!--testimonial-->
+               <tr>
+                  <td align="center" bgcolor="#d1d2d3" style="background-color:#d1d2d3;"><a href="#" target="_blank"><img alt="Pimsleur boils down the essential elements of a foreign language" border="0" class="fullwidth" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/testimonials/testimonial_boils_down.jpg" style="display:block; max-width: 700px; max-height:400px;" width="700" /></a></td>
+               </tr>
+               <!--//testimonial--><!--socials-->
+               <tr>
+                  <td align="center"><center><table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" width="700">
+               <tr>
+				<td align="center" height="139" valign="middle" style="background-image:url(http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/footer_bg.jpg); background-repeat:none; background-position:top center; background-color:#1644f9; background-size:100% 100%;" background="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/footer_bg.jpg">
+		<!--[if gte mso 9]>
+		<v:image xmlns:v="urn:schemas-microsoft-com:vml" id="theImage1" style='behavior: url(#default#VML); display:inline-block;position:absolute; height:139px; width:700px;top:0;left:0;border:0;z-index:1;' src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/footer_bg.jpg"/>
+		<![endif]-->
+		<!--[if (gte mso 9)&(lt mso 15)]>
+		<v:shape xmlns:v="urn:schemas-microsoft-com:vml" id="theText1" style='behavior: url(#default#VML); display:inline-block; position:absolute;height:139px; width:700px;top:0px; left:-10px; border:0; z-index:2;'>
+		<div>
+		<![endif]-->
+		<!--[if (gte mso 15)]>
+		<v:shape xmlns:v="urn:schemas-microsoft-com:vml" id="theText1" style='behavior: url(#default#VML); display:inline-block; position:absolute;height:139px; width:700px;top:0px; left:30px; border:0; z-index:2;'>
+		<div>
+		<![endif]-->
+					<table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" style="max-width:100%;" width="700">
+						<tr>
+							<td class="bodypadding" style="padding:0px 30px 0px 30px;" valign="top">
+                           <!--[if (gte mso 9)]>
+        <table width="640" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+        <td width="250" valign="middle" align="left">
+        <![endif]-->
+                           <table align="left" border="0" cellpadding="0" cellspacing="0" class="width39pct" style="max-width: 39%;" width="250">
+								<tr>
+									<!--<td width="30"></td>-->
+									<td height="135" valign="middle" align="left" class="bodyText centerText autoHeight" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:14px; font-weight:400; color:#ffffff; line-height:150%;">
+									Follow Pimsleur to get the latest news about available languages, deals, formats and more.
+									</td>
+								</tr>
+                           </table>
+                           <!--[if (gte mso 9)]>
+        </td>
+        <td width="390" valign="middle" align="left">
+        <![endif]-->
+
+                           <table align="left" border="0" cellpadding="0" cellspacing="0" class="width49pct" style="max-width: 49%;" width="300">
+                                 <tr>
+                                    <td height="135" valign="middle" align="center" class="padtop15 autoHeight">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="176">
+																									<tr>
+																										<td style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:10px;" valign="top" width="34"><a href="#" style="color:#ffffff;" target="_blank"><img alt="Facebook" border="0" height="34" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/icons/icon_facebook_2x.png" style="display:block;" width="34" /></a></td>
+																										<td width="10"></td>
+																										<td style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:10px;" valign="top" width="34"><a href="#" style="color:#ffffff;" target="_blank"><img alt="Twitter" border="0" height="34" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/icons/icon_twitter_2x.png" style="display:block;" width="34" /></a></td>
+																										<td width="20"></td>
+																										<td style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:10px;" valign="top" width="34"><a href="#" style="color:#ffffff;" target="_blank"><img alt="Google+" border="0" height="34" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/icons/icon_googleplus_2x.png" style="display:block;" width="34" /></a></td>
+																										<td width="10"></td>
+																										<td style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:10px;" valign="top" width="34"><a href="#" style="color:#ffffff;" target="_blank"><img alt="YouTube" border="0" height="34" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/icons/icon_youtube_2x.png" style="display:block;" width="34" /></a></td>
+																									</tr>
+																								</table>
+                                    
+                                    </td>
+                                 </tr>
+                           </table>
+                           <!--[if (gte mso 9)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]--></td>
+						</tr>
+					</table>
+		<!--[if gte mso 9]>
+		</div>
+		</v:shape>
+		<![endif]-->
+				</td>
+               </tr>
+    </table></center></td>
+               </tr>
+               <!--//social--><!--footer-->
+               <tr>
+                  <td align="center">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" width="700">
+                     <tbody>
+                        <tr>
+                           <td class="bodypadding" style="padding:15px 30px 15px 30px;" valign="top"><!--refer-->								<table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" width="100%">
+
+									<tr>
+
+										<td class="nopadding" align="center" style="padding-top:15px; padding-bottom:15px;">
+
+										<a href="#" target="_blank"><img alt="Refer a Friend, Get $20" border="0" class="fullwidth" src="http://static.cdn.responsys.net/i2/responsysimages/simon/contentlibrary/campaigns/pimsleur_common/rebrand/refer_banner.jpg" style="display:block; max-width: 640px; max-height:150px;" width="640" /></a>
+
+										</td>
+
+									</tr>
+
+								</table><!--//refer-->
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" class="fullwidth" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td align="left" class="notoppadding" style="font-family:'Open Sans',Helvetica,Arial,sans-serif; font-size:12px; font-weight:normal; color:#20252c; line-height:150%; padding-bottom:12px;">
+                                    <p class="graylink" style="margin:15px 0 0 0; padding:0;"><!--disclaimer-->Code <span style="font-weight:600;">PROMO</span> may be used once per transaction. This offer expires 11:59 PM Pacific Standard Time MM/DD/YYYY and may not be combined with any other offers. XX% discount on CD format courses, XX% discount on MP3 or Software courses. Standard shipping is free. Void where prohibited. Offer not valid for eGift Certificates. Consumer must pay sales taxes where applicable. For ordering assistance call (XXX) XXX-XXXX.
+                                    </p>
+
+                                    <p class="graylink" style="margin:15px 0 0 0; padding:0;">Pimsleur FlexiPay 3 Easy Payments is an interest-free and easy way to divide your purchase into three low monthly payments at no extra charge. Minimum order requirements may apply. (<a class="text-link" href="#" style="font-weight:600; color:#1c2154; text-decoration: underline;" target="_blank">See FlexiPay terms</a>)
+                                    </p>
+                                    <!--manage subscriptions--><p class="graylink" style="margin:15px 0 0 0; padding:0;">To make sure our email communications are delivered to your inbox, please add <span style="font-weight:600; color:#1c2154; text-decoration: none;" class="text-link" >pimsleur@news.pimsleur.com</span> to your address book.</p>
+
+<p class="graylink" style="margin:15px 0 0 0; padding:0;"><span style="font-weight:600;">Manage your Newsletters &amp; Alerts subscriptions:</span><br />
+This email was sent to you because you registered to receive emails from Pimsleur.com, a website of Simon &amp; Schuster, Inc. To unsubscribe from Pimsleur.com marketing email communications, please <a class="text-link" href="#" style="font-weight:600; color:#1c2154; text-decoration: underline;" target="_blank">click here</a>.</p>
+                                    
+<p class="graylink" style="margin:15px 0 0 0; padding:0;"><a class="text-link" href="#" style="font-weight:600; color:#1c2154; text-decoration: underline;" target="_blank">Privacy Policy</a></p>
+                                    
+<p class="graylink" style="margin:15px 0 0 0; padding:0;">Simon &amp; Schuster, Inc., 1230 Avenue of the Americas, New York, NY 10020<br />
+<a class="text-link" href="#" style="font-weight:600; color:#1c2154; text-decoration: underline;" target="_blank">http://www.simonandschuster.com</a></p><!--//manage subscriptions--></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </td>
+               </tr>
+               <!--//footer-->
+            </tbody>
+         </table>
+         <!--//main--></td>
+      </tr>
+   </tbody>
+</table>
+<!--//wrapper-->
+<style type="text/css">
+/*fonts*/
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/*common styles*/
+body {
+	padding: 0;
+	margin: 0;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	background-color:#f7f7f7;
+}
+table {
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+td {
+	font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	color: #20252c;
+	font-weight: 400;
+}
+.ReadMsgBody, .ExternalClass {
+	width: 100%;
+}
+.ExternalClass * {
+	line-height: 100%;
+}
+a[href^="tel"], a[href^="sms"] {
+	text-decoration: none;
+	color: inherit;
+	pointer-events: none;
+	cursor: default;
+}
+.graylink a {
+	text-decoration: none;
+	color: #20252c;
+}
+.whitelink a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.text-link {
+	transition: all ease 0.5s;
+}
+.text-link:hover {
+	color: #1644f9 !important;
+}
+.button-link {
+	transition: all ease 0.5s;
+}
+.button-link:hover {
+	background-color: #1644f9 !important;
+}
+.blueLink a {color:#1c2154 !important; text-decoration:none !important; pointer-events:none !important;
+}
+}
+@media only screen and (max-width: 700px) {
+.wraptab {
+	width: 95% !important;
+}
+.fullwidth {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+img.fullwidth {
+	height: auto !important;
+}
+.width59pct {
+	width: 59% !important;
+	max-width: 59% !important;
+}
+.width50pct {
+	width: 50% !important;
+	max-width: 50% !important;
+}
+.width39pct {
+	width: 39% !important;
+	max-width: 39% !important;
+}
+.width49pct {
+	width: 49% !important;
+	max-width: 49% !important;
+}
+.width45pct {
+	width: 45% !important;
+	max-width: 45% !important;
+}
+.socialtable {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.bottompad5 {
+	padding-bottom: 5px !important;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.wraptab {
+	width: 95% !important;
+	max-width:95% !important;
+}
+.fullwidth, .width59pct, .width50pct, .width49pct, .width45pct, .width39pct {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: table !important;
+}
+.ctatable {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+.vlineTab {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin-bottom: 20px !important;
+}
+.vlineTd {
+	border-right: 0 !important;
+	border-bottom: 1px dashed #9abfd2 !important;
+	height: 20px !important;
+}
+img.fullwidth {
+	height: auto !important;
+}
+.timerImg {
+	width: 80% !important;
+	max-width: 324px;
+}
+.squareImage {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+.preheader {
+	padding: 12px 0px 12px 0px !important;
+}
+.headerNav {
+	padding-top:0px !important;
+	height:auto !important;
+}
+.bodypadding {
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.padtop30 {
+	padding-top:30px !important;
+}
+.padtop15 {
+	padding-top:15px !important;
+}
+.notoppadding {
+	padding-top:0 !important;
+}
+.nosidepadding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+.nopadding {
+	padding: 0 !important;
+}
+.hlinepadding {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.autoHeight {
+	height: auto !important;
+}
+.centerText {
+	text-align: center !important;
+}
+.hideMobile {
+	display: none !important;
+}
+.headerfont {
+	font-size: 24px !important;
+}
+.subheaderfont {
+	font-size: 18px !important;
+}
+.bodyfont {
+	font-size: 14px !important;
+}
+.refertable {
+	border-bottom: 1px solid #bbbbbb !important;
+}
+.bottompadding12 {
+	padding-bottom: 12px !important;
+}
+.toppadding12 {
+	padding-top: 12px !important;
+}
+}
+</style>
+</body>
+</html>
